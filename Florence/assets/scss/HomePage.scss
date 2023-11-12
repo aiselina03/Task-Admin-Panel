@@ -1,0 +1,94 @@
+@import "./base/reset";
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin-top: 50px;
+    width: 300px;
+    cursor: pointer;
+  }
+
+  .icon1 {
+    position: relative;
+    cursor: pointer;
+
+    .fa-bars {
+      color: #aaa5db;
+      position: absolute;
+      right: 520px;
+      top: 15px;
+      font-size: 28px;
+
+      &:hover {
+        color: #7a72c2;
+      }
+    }
+  }
+
+  .icon2 {
+    position: relative;
+    font-size: 28px;
+    color: #aaa5db;
+    cursor: pointer;
+
+    .fa-user,
+    .fa-magnifying-glass,
+    .fa-bag-shopping {
+      position: absolute;
+      top: 15px;
+
+      &:hover {
+        color: #7a72c2;
+      }
+    }
+
+    .fa-user {
+      left: 400px;
+    }
+    .fa-magnifying-glass {
+      left: 450px;
+    }
+    .fa-bag-shopping {
+      left: 500px;
+    }
+  }
+}
+
+.cards {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+
+  .card {
+    height: 380px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    border-radius: 20px;
+    line-height: 30px;
+    color: #aaa5db;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: all 600ms;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
+    img {
+      width: 450px;
+      height: 300px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  }
+}

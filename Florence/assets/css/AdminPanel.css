@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: #9a94e0;
+  background: -webkit-linear-gradient(to right, #fffcdc, #aaa5db);
+  background: linear-gradient(to right, rgb(251, 250, 232), #aaa5db);
+}
+body .homepage,
+body .add {
+  transition: all 500ms;
+  cursor: pointer;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #aaa5db;
+  border-radius: 8px;
+  background-color: #aaa5db;
+  color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+body .homepage:hover,
+body .add:hover {
+  background-color: #7a72c2;
+}
+body .homepage {
+  margin: 30px 0 30px 150px;
+}
+body .add {
+  margin: 30px;
+}
+body .admintable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+body .admintable table {
+  border: 1px solid gray;
+  width: 80%;
+  text-align: center;
+}
+body .admintable table th,
+body .admintable table td {
+  font-size: 18px;
+  height: 30px;
+  border: 1px solid gray;
+}
+body .admintable table td {
+  width: 20px;
+}
+body .admintable table .update,
+body .admintable table .delete {
+  transition: all 500ms;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #7c77a5;
+  border-radius: 8px;
+  background-color: #aaa5db;
+  color: white;
+}
+body .admintable table .update:hover,
+body .admintable table .delete:hover {
+  background-color: #7a72c2;
+}/*# sourceMappingURL=AdminPanel.css.map */

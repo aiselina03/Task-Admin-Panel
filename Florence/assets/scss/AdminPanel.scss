@@ -1,0 +1,64 @@
+@import "./base/reset";
+
+body {
+  background: #9a94e0;
+  background: -webkit-linear-gradient(to right, #fffcdc, #aaa5db);
+  background: linear-gradient(to right, rgb(251, 250, 232), #aaa5db);
+
+  .homepage,
+  .add {
+    transition: all 500ms;
+    cursor: pointer;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #aaa5db;
+    border-radius: 8px;
+    background-color: #aaa5db;
+    color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    &:hover {
+      background-color: #7a72c2;
+    }
+  }
+  .homepage {
+    margin: 30px 0 30px 150px;
+  }
+  .add {
+    margin: 30px;
+  }
+
+  .admintable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    table {
+      border: 1px solid gray;
+      width: 80%;
+      text-align: center;
+      th,
+      td {
+        font-size: 18px;
+        height: 30px;
+        border: 1px solid gray;
+      }
+      td {
+        width: 20px;
+      }
+      .update,
+      .delete {
+        transition: all 500ms;
+        cursor: pointer;
+        padding: 10px 15px;
+        font-size: 16px;
+        border: 1px solid #7c77a5;
+        border-radius: 8px;
+        background-color: #aaa5db;
+        color: white;
+        &:hover {
+          background-color: #7a72c2;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "./base/reset";
+
+body {
+  background: #9a94e0;
+  background: -webkit-linear-gradient(to right, #fffcdc, #aaa5db);
+  background: linear-gradient(to right, rgb(251, 250, 232), #aaa5db);
+  .panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+      background-color: #ada9de;
+      width: 400px;
+      height: 450px;
+      border-radius: 10px;
+      margin-top: 70px;
+      input {
+        width: 350px;
+        height: 35px;
+        margin: 25px;
+        border-radius: 7px;
+        border: none;
+        padding: 5px;
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
+        cursor: pointer;
+        margin: 10% 35%;
+        transition: all 500ms;
+        padding: 10px 35px;
+        font-size: 15px;
+        border: 1px solid #7a72c2;
+        border-radius: 8px;
+        background-color: white;
+        color: #7a72c2;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        &:hover {
+          color: white;
+          background-color:  #7a72c2;
+        }
+      }
+    }
+  }
+}
